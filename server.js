@@ -8,11 +8,12 @@ var express = require('express')
     passport = require('passport')
     Auth0Strategy = require('passport-auth0')
     session = require('express-session')
-    stripe = require('stripe')(config.secret_key)
+    stripe = require('stripe')(config.secret_key),
+    path = require('path')
 
 
 var app =  module.exports = express();
-app.use(express.static(__dirname+'/../build'))
+app.use(express.static(__dirname+'/build'))
 app.use(bodyParser.json());
 app.use(cors())
 app.use(session({
@@ -133,5 +134,8 @@ app.post('/api/payment', function(req, res, next){
 });
 });
 
+app.get("*", function(req, res){
+    res.sendFile(path.join(__dirname, './build/index.html'))
+})
 
 app.listen(port, function() { console.log(`Started server on port ${port}`)});
