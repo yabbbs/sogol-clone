@@ -1,0 +1,201 @@
+.Add{
+    background: #f4efec;
+    width: 100%;
+    height: 100vh;
+
+    h1{
+        font-family: oswald;
+        font-size: 26px;
+        position: relative;
+        align-self: center;
+        margin-top: 20px;
+    }
+
+    .Nav{
+        z-index: 123124;
+        position: relative;
+        top: 40px;
+    }
+//-------- INPUTS ---------//
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 3;
+
+        input{
+            position: relative;
+            width: 300px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        p{
+            position: relative;
+            width: 200px;
+            top: 40px;
+            left: 50px;
+        }
+
+        .add_title_btn{
+            position: relative;
+            width: 60px;
+            margin-left: 50px;
+            margin-top: -30px;
+        }
+
+        .add_img_btn{
+            position: relative;
+            width: 60px;
+            margin-left: 50px;
+            margin-top: -30px;
+        }
+
+        .add_summary_btn{
+            position: relative;
+            width: 60px;
+            margin-left: 50px;
+            margin-top: -30px;
+        }
+
+        .add_description_btn{
+            position: relative;
+            width: 60px;
+            margin-left: 50px;
+            margin-top: -30px;
+        }
+
+        .Text1{
+            position: relative;
+            z-index: 123;
+            width: 300px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+            margin-top: 50px;           
+        }
+    }
+
+//----------PREVIEW---------//
+
+    .preview{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        display: flex;
+        align-content: flex-end;
+        justify-content: flex-start;
+
+        .place{
+        height: 350px;
+        width: 22%;
+        box-shadow: 2px 2px 50px 2px $greyish - 25;
+        background-color: white; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        left: 50%;
+        align-self: center;
+        }
+
+        .imgy{
+            height: 130px;
+            width: 260px;;
+            background: #CDCDC4;
+            position: absolute;
+            top: 30px;
+        }
+
+        .the_Title{
+                margin-top: 18px;
+                font-family: 'playfair display';
+                font-size: 2em;
+                position: absolute;
+        }
+        
+        .summ{
+            position: absolute;
+            margin-top: 80px;
+            color: grey;
+            opacity: .8;
+            font-family: $smallFont;
+        }
+    }
+
+//--------POPUP---------//
+       .addedToCart{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            z-index: 98097;
+background:linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5));
+            animation: fadeIn 1s;
+
+            .x{
+                position: relative;
+                left: 470px;
+                top: -70px;
+                cursor: pointer;
+            }
+
+            .addedBox{
+                background: #E0E0E0;
+                width: 500px;
+                height: 400px;
+                z-index: 78;
+                animation: slideIn 1s;
+                box-shadow: 2px 2px 50px 2px $greyish - 180;
+                z-index: 980970;
+
+                .award{
+                    width: 100px;
+                    height: 100px;
+                    position: relative;
+                    left: 200px;
+                    top: 50px;
+                    opacity: 1;
+                    align-self: center;
+                    animation: award 2s infinite 1s;
+                }
+
+                .addedText{
+                    color: $grey;
+                    position: relative;
+                    font-family: $smallFont;
+                    font-size: 30px;
+                    left: 90px;
+                    top: 30%;
+                }
+
+                .arrow{
+                    position: relative;
+                    top: 100px;
+                    left: 170px;
+                }
+            }
+
+            @keyframes slideIn{
+                0% { 
+                    transform: translate3d(0, -100%, 0); 
+                    visibility: visible; 
+                } 
+                100% { 
+                    transform: translate3d(0, 0, 0); 
+                } 
+            }
+
+            @keyframes award{
+                    0% {transform: scale(1);} 
+                    10%, 20% {transform: scale(0.9) rotate(-3deg);} 
+                    30%, 50%, 70%, 90% {transform: scale(1.1) rotate(3deg);} 
+                    40%, 60%, 80% {transform: scale(1.1) rotate(-3deg);} 
+                    100% {transform: scale(1) rotate(0);} 
+            }
+       }
+}

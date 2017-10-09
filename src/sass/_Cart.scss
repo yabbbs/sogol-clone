@@ -1,0 +1,136 @@
+.Cart{
+    background: url('../assets/frontPage.png');
+    position: relative;
+    // background-size: contain;
+    width: 100%;
+    height: auto + 100px;
+    z-index: 0;
+    background-repeat: no-repeat;    
+
+    .yellowHead{
+        width: 100%;
+        height: 5px;
+        background-color: $brownYellow;
+        position: absolute;
+        top: 0;
+    }
+
+    .logo{
+        width: 128px;
+        position: relative;
+        top: 100px; 
+        left: 140px;
+    }
+
+    .cart_box{
+        width: 80%;
+        height: auto;
+        background: white - 1;
+        position: relative;
+        left: 80px;
+        top: 200px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+        .total{
+            font-family: $smallFont;
+            font-size: 20px;
+            position: absolute;
+            left: 68%;
+            bottom: 30px;
+            align-self: center;
+        }
+
+                .btn{
+                -webkit-border-radius: 28;
+                -moz-border-radius: 28;
+                border-radius: 28px;
+                font-family: Arial;
+                color: black;
+                font-size: 20px;
+                background: $brownYellow;
+                padding: 10px 20px 10px 20px;
+                text-decoration: none;
+                margin-top: 50px;
+                border: none;
+                z-index: 12;
+                position: relative;
+                align-self: flex-end;
+                margin-left: 80%;
+                margin-bottom: 20px;
+            }
+
+            .btn:hover{
+                opacity: .9;
+                cursor: pointer;
+            }
+
+    }
+
+    .footerTwo{
+        height: 200px;
+        width: 100%;
+        background-color: black;
+        margin-top: 300px;
+        position: relative;
+
+        .logo_Foot{
+            width: 64px;
+            position: relative;
+            left: 15%;
+            top: 50px;
+        }
+
+        .email{
+            color: white;
+            position: relative;
+            width: 400px;
+            left: 15%;
+            top: 65px;
+            font-family: roboto;
+            font-size: 20px;
+        }
+
+        .quarry{
+            width: 400px;
+            font-size: 14px;
+            color: $grey;
+            position: relative;
+            left: 60%;
+            top: 8px;
+            z-index: 234;
+        }
+
+        .comp{
+            width: 400px;
+            font-size: 14px;
+            color: $grey;
+            position: relative;
+            left: 60%;
+            top: 28px;
+            z-index: 123;
+        }
+
+        .dAndd{
+            width: 400px;
+            font-size: 14px;
+            color: $grey;
+            position: relative;
+            left: 60%;
+            top: 48px;
+            z-index: 123;  
+        }
+
+        .bleh{
+            width: 400px;
+            font-size: 14px;
+            color: white;
+            position: relative;
+            // left: 72.5%;
+            // top: 34px;
+            // z-index: 123;
+            line-height: 16.1px;
+        }
+    }
+
+
+}

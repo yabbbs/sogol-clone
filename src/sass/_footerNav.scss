@@ -1,0 +1,47 @@
+.footerNav{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    position: relative;
+    left: 15%;
+    top: 85px;
+    font-family: roboto;
+    font-size: 14px;
+    // line-height: 23px;
+    cursor: pointer;
+
+                            @media(max-width: 414px){
+                                width: 90%;
+                                left: 20px;;
+                                font-size: 17px;
+                                align-items: center;
+                            }
+
+    .home{
+        color: grey;
+        text-decoration: none;
+    }
+
+    .home:hover{
+        color: $pink;
+    }
+
+    .FAQ{
+        color: grey;
+        text-decoration: none;
+    }
+
+    .FAQ:hover{
+color: $pink;
+    }
+
+    .Shop{
+        color: grey;
+        text-decoration: none;
+    }
+    
+    .Shop:hover{
+color: $pink;
+    }
+
+}

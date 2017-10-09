@@ -1,0 +1,48 @@
+.Cart_Production{
+    display: flex;
+
+    .button{
+        
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+    
+    .imgg{
+        height: 200px;
+        margin: 50px;
+    }
+
+    .yexty{
+            .prodTitle{
+                margin-top: 50px;
+                font-family: oswald;
+                color: $brownYellow;
+                font-size: 2em;
+                position: relative;
+            }
+
+            .descTitle{
+                margin-top: 50px;
+                font-family: oswald;
+                color: $grey;
+                font-size: 20px;
+                position: relative; 
+            }
+
+            .money{
+                margin-top: 30px;
+                color: $grey;
+                font-size: 24px;
+            }
+    }
+
+    .x{
+        margin-left: 100px;
+        position: absolute;
+        align-self: center;
+        margin-left: 900px;
+        cursor: pointer;
+    }
+
+}

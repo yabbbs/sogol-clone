@@ -1,0 +1,50 @@
+.Nav{
+    display: flex;
+    justify-content: space-around;
+    width: 23%;
+    position: relative;
+    top: 135px;
+    left: 70%;
+    font-family: roboto;
+    font-size: 20px;
+    // line-height: 23px;
+    cursor: pointer;
+
+                            @media(max-width: 414px){
+                                width: 90%;
+                                left: 20px;;
+                                font-size: 17px;
+                                align-items: center;
+                            }
+
+    .home{
+        color: black;
+        text-decoration: none;
+    }
+
+    .home:hover{
+        opacity: .5;
+    }
+
+    .FAQ{
+        color: $grey;
+        text-decoration: none;
+    }
+
+    .FAQ:hover{
+        opacity: .5;
+
+    }
+
+    .Shop{
+        color: $brownYellow;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    .Shop:hover{
+        opacity: .5;
+
+    }
+
+}
