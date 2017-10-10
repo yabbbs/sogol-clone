@@ -38,7 +38,7 @@ export default class Add extends Component{
 
     postStuff(){
         let {title, img, short_description} = this.state
-        axios.post('http://localhost:3001/add/stuff', {title, img, short_description}).then(res =>{
+        axios.post('/add/stuff', {title, img, short_description}).then(res =>{
             return res
         })
         this.setState({

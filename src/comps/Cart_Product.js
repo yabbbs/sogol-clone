@@ -28,7 +28,7 @@ export default class Cart_Product extends Component{
         const product = this.state.product
         return(
             <div className="Cart_Production">
-                <img className="imgg" src={product.url1} alt="SO DUMB"/>
+                <img className="imgg" src={product.url1} alt=""/>
                 <div className='yexty'>
                     <p className="prodTitle">{product.title}</p>        
                     <p className="descTitle">{product.short_description}</p> 

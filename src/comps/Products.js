@@ -86,16 +86,16 @@ class Products extends Component{
                 <div className="header">
 
                 <Link to='/cart'>
-                    <img className="shopping" src={shoppingCart} alt="dumb"/>
+                    <img className="shopping" src={shoppingCart} alt=""/>
                 </Link>
 
                     <p className="titlee">{this.state.info.title}</p>
                     <p className="description">{this.state.info.description}</p>
                     <button className="button" onClick={this.moveToCart}>Add To Cart</button>
                     <div className="yellowheadTwo"></div>
-                    <img className="imgs" src={this.state.info.url1} alt="dumb"/>
-                    <img className="imgs" src={this.state.info.url2} alt="dumb"/>
-                    <img className="imgs" src={this.state.info.url3} alt="dumb"/>
+                    <img className="imgs" src={this.state.info.url1} alt=""/>
+                    <img className="imgs" src={this.state.info.url2} alt=""/>
+                    <img className="imgs" src={this.state.info.url3} alt=""/>
                 </div>
                 
                 

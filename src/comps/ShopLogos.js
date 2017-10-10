@@ -66,7 +66,7 @@ export default class FAQ extends Component{
                         <p className="head">Available Logos</p>
                         <div className="logoArea">
                             {allLogos}
-                            <a href="http://localhost:3001/api/auth"><p className="login">Are you an Admin? Log in here!</p></a>
+                            <a href="/api/auth"><p className="login">Are you an Admin? Log in here!</p></a>
                         </div>
                 </div>  
 
