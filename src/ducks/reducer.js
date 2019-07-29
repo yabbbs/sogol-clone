@@ -16,7 +16,6 @@ export function removeFromCart( id ){
 
 
 export function addToCart( id ) {
-    console.log('action id', id);
     return {
         type: ADD_TO_CART,
         payload: id
@@ -33,7 +32,6 @@ export function checkOut() {
 
 //reducer
 export default function reducer(state = initialState, action){
-    console.log('reducer action', action)
     switch (action.type){
         case ADD_TO_CART:
             if(state.cart.indexOf(action.payload)=== -1){

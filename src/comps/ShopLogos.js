@@ -12,23 +12,16 @@ export default class FAQ extends Component {
     super();
 
     this.state = {
-      logos: [
-        {
-          name: "",
-          description: "",
-          url: ""
-        }
-      ]
+      logos: []
     };
   }
 
   componentDidMount() {
     axios
-      .get("http://localhost:3000/products")
-      .then(res => {
-        console.log(res);
+      .get(`http://www.splashbase.co/api/v1/images/latest`)
+      .then(details => {
         this.setState({
-          logos: res.data
+          logos: details.data.images
         });
       })
       .catch(err => {
@@ -72,13 +65,9 @@ export default class FAQ extends Component {
           <p className="head">Available Logos</p>
           <div className="logoArea">
             {allLogos}
-            <a href="/api/auth">
-              <p className="login">Are you an Admin? Log in here!</p>
-            </a>
           </div>
         </div>
 
-        {/* <div className="footer"></div>  */}
         <div className="footerTwo">
           <Link to="/">
             <img className="logo_Foot" src={Logo} alt="dumb" />

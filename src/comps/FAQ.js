@@ -4,8 +4,15 @@ import Nav from "./nav";
 import footer from "../assets/footer.png";
 import FooterNav from "./footerNav";
 import { Link } from "react-router-dom";
+import Modal from './Modal';
 
 export default class FAQ extends Component {
+  state = {
+    modal: false
+  }
+
+  toggleModal = () => this.setState({modal: !this.state.modal})
+
   render() {
     return (
       <div className="FAQ">
@@ -18,6 +25,7 @@ export default class FAQ extends Component {
             Have a question? You're in the right place.
           </p>
         </div>
+        {this.state.modal ? <Modal toggleModal={this.toggleModal} /> : null}
 
         <div className="questions">
           <div className="whiteBox">
@@ -105,6 +113,7 @@ export default class FAQ extends Component {
               this situation, feel free to email us at contact@sogol.co.
             </p>
           </div>
+        <button className='FormButton' onClick={() => this.toggleModal()}>Submit feedback</button>
 
           <div className="footerBottom">
             <img className="footerImg" src={footer} alt="footsies" />
@@ -113,7 +122,6 @@ export default class FAQ extends Component {
               If your question wasn't answered here, no worries! Feel free to
               <br /> email us and we'll do our best to help.
             </p>
-            {/* <button className="btn">Email Us</button>  */}
           </div>
 
           <div className="footerTwo">

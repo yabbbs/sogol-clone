@@ -10,6 +10,8 @@ import x from "../assets/X.svg";
 import { connect } from "react-redux";
 import { addToCart } from "../ducks/reducer";
 
+const API_KEY= '1rkmo4iQ3VALZCrWyLN4K0Mlgc8t9TbYGV7DhTeE';
+
 class Products extends Component {
   constructor() {
     super();
@@ -23,13 +25,11 @@ class Products extends Component {
   }
 
   moveToCart() {
-    // console.log(this.state.info.id)
     this.props.addToCart(this.state.info.id);
     this.setState({
       showModal: true
     });
     setTimeout(() => {
-      // alert(this.state.showModal)
     }, 1000);
   }
 
@@ -41,11 +41,10 @@ class Products extends Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:3000/products/" + this.props.match.params.id)
+      .get(`https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=${API_KEY}`)
       .then(details => {
-        // console.log(details.data[0])
         this.setState({
-          info: details.data[0]
+          info: details.data
         });
       });
   }

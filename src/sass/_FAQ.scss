@@ -77,6 +77,25 @@
                 }
     }
 
+    .FormButton {
+        margin-top: 20px;
+        top: 250px;
+        left: 140px;
+        border-radius: 28px;
+        font-family: Arial;
+        font-size: 20px;
+        background: white;
+        color: black;
+        padding: 10px 20px 10px 20px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        border: none;
+        opacity: .9;
+        z-index: 9999;
+    }
+
     .questions{
         background-color: $greyish;
         width: 100%;
